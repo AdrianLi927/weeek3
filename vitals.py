@@ -6,7 +6,7 @@ import random
 
 __all__ = ["generate_sample", "streak_over_threshold"]
 
-
+# TODO: not random enough and more edge cases to test eg artifacts are only 300 or -5 not 0 or 250
 def generate_sample(length: int, above_count: int, threshold: int) -> list[int]:
     """Create a deterministic sample with a long region above the threshold."""
     if length <= 0:

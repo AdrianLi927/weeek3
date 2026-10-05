@@ -21,12 +21,14 @@
      choose, and why? What would change in the answer if you had chosen the
      other way? -->
 
+A dropped sample is linearly interpolated between its closest undropped neighbours, since a human heartrate doesnt usually suddenly dramatically jump very far over the span of 10 seconds it would probably safe to assume that for a real data set the dropped data's actual value would be somewhere in between the 2 neighbour undropped data points.
+
 
 ## 4. The generator
 
 <!-- Its signature, the prompt you used, and what it has to guarantee for your
      checks to mean anything. -->
-
+The signiture was not explicitly mentioned but the agent correctly infered that `length`, `above_count` and `threshold` should be integers and return should be `list[int]` based on the context of the first function.
 ```
 ```
 
@@ -42,7 +44,7 @@
      and look at the code for anything you did not ask for: rounding, ordering,
      what it does with an input you never mentioned. -->
 
-It had decided to check other files despite telling it not to for 3 times, I should just move the files out the folder next time..
+It had decided to check other files despite telling it not to for 3 times, I should just move the files out the project folder next time..
 
 
 ## 7. The result
