@@ -13,11 +13,13 @@ The tests will contain in this order (use try except where errors are expected):
 - Everything exactly on the threshold
 - Nothing above the threshold
 - 3 tests using `generate_samples` with assert statements, these can pass with a 5% tolerance on the expected result, they will test for the expected longest streak time by first a generic one, one with all values above the threshold or invalid, and one with all values below the threshold or invalid
-Then finally it will print the longest streak of high heartrate with ```python
+Then finally it will print the longest streak of high heartrate with
+```python
 readings = [96, 104, 108, 112, 99, 101, 103, 107, 0, 110,
             115, 98, 102, 300, 105, 109, 111, 97]
 interval_s = 10
-``` along with units.
+```
+along with units.
 
 There is no extra information in the other files in the folder. Do not check or edit them.
 
